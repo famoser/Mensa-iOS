@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "locations_rss.json",
+      "idiom" : "universal",
+      "universal-type-identifier" : "json"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

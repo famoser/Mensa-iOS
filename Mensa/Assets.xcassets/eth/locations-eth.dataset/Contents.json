@@ -2,7 +2,8 @@
   "data" : [
     {
       "filename" : "locations.json",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "universal-type-identifier" : "json"
     }
   ],
   "info" : {

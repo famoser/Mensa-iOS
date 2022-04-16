@@ -10,19 +10,17 @@ import SwiftUI
 struct MensaView: View {
     let mensa: Mensa
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading, spacing: 0) {
-                Image("alumni-quatro-lounge")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                List {
-                    ForEach(mensa.menus){ menu in
-                        MenuView(menu: menu)
-                    }
+        VStack(alignment: .leading, spacing: 0) {
+            Image(mensa.title.lowercased())
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            List {
+                ForEach(mensa.menus){ menu in
+                    MenuView(menu: menu)
                 }
             }
-            .navigationTitle(mensa.title)
         }
+        .navigationTitle(mensa.title)
     }
 }
 

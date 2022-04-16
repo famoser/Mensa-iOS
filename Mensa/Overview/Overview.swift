@@ -15,7 +15,9 @@ struct Overview: View {
                 ForEach(mensas) { mensa in
                     Section(header: Text(mensa.title)) {
                         ForEach(mensa.menus){ menu in
-                            SlimMenuView(menu: menu)
+                            NavigationLink(destination: MensaView(mensa: mensa)) {
+                                SlimMenuView(menu: menu)
+                            }
                         }
                     }
                 }

@@ -12,7 +12,6 @@
 		5F2ECF8A2795FA2D00B0F335 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2ECF892795FA2D00B0F335 /* Menu.swift */; };
 		5F2ECF8C279604D800B0F335 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2ECF8B279604D800B0F335 /* MenuView.swift */; };
 		5F4BA3A5277DD90E00C528B4 /* MensaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BA3A4277DD90E00C528B4 /* MensaApp.swift */; };
-		5F4BA3A7277DD90E00C528B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BA3A6277DD90E00C528B4 /* ContentView.swift */; };
 		5F4BA3A9277DD90E00C528B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BA3A8277DD90E00C528B4 /* Assets.xcassets */; };
 		5F4BA3AC277DD90E00C528B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F4BA3AB277DD90E00C528B4 /* Preview Assets.xcassets */; };
 		5F4BA3B6277DD90F00C528B4 /* MensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BA3B5277DD90F00C528B4 /* MensaTests.swift */; };
@@ -20,6 +19,8 @@
 		5F4BA3C2277DD90F00C528B4 /* MensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4BA3C1277DD90F00C528B4 /* MensaUITestsLaunchTests.swift */; };
 		5F763491280B004A00AF49ED /* Overview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763490280B004A00AF49ED /* Overview.swift */; };
 		5F763493280B0D8C00AF49ED /* SlimMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763492280B0D8C00AF49ED /* SlimMenuView.swift */; };
+		5F763495280B1DDE00AF49ED /* locations-ethz.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F763494280B1DDE00AF49ED /* locations-ethz.json */; };
+		5F763497280B1EA500AF49ED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763496280B1EA500AF49ED /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		5F2ECF8B279604D800B0F335 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		5F4BA3A1277DD90E00C528B4 /* Mensa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mensa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4BA3A4277DD90E00C528B4 /* MensaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensaApp.swift; sourceTree = "<group>"; };
-		5F4BA3A6277DD90E00C528B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F4BA3A8277DD90E00C528B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F4BA3AB277DD90E00C528B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F4BA3B1277DD90F00C528B4 /* MensaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MensaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +56,8 @@
 		5F4BA3C1277DD90F00C528B4 /* MensaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5F763490280B004A00AF49ED /* Overview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overview.swift; sourceTree = "<group>"; };
 		5F763492280B0D8C00AF49ED /* SlimMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimMenuView.swift; sourceTree = "<group>"; };
+		5F763494280B1DDE00AF49ED /* locations-ethz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "locations-ethz.json"; sourceTree = "<group>"; };
+		5F763496280B1EA500AF49ED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				5F2ECF832795E6BB00B0F335 /* Mensa.swift */,
 				5F2ECF892795FA2D00B0F335 /* Menu.swift */,
+				5F763496280B1EA500AF49ED /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,9 +122,9 @@
 				5F76348E280A9F7200AF49ED /* Overview */,
 				5F76348D280A9F5A00AF49ED /* Data */,
 				5F4BA3A4277DD90E00C528B4 /* MensaApp.swift */,
-				5F4BA3A6277DD90E00C528B4 /* ContentView.swift */,
 				5F4BA3A8277DD90E00C528B4 /* Assets.xcassets */,
 				5F4BA3AA277DD90E00C528B4 /* Preview Content */,
+				5F763494280B1DDE00AF49ED /* locations-ethz.json */,
 			);
 			path = Mensa;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F763495280B1DDE00AF49ED /* locations-ethz.json in Resources */,
 				5F4BA3AC277DD90E00C528B4 /* Preview Assets.xcassets in Resources */,
 				5F4BA3A9277DD90E00C528B4 /* Assets.xcassets in Resources */,
 			);
@@ -311,9 +315,9 @@
 				5F2ECF8C279604D800B0F335 /* MenuView.swift in Sources */,
 				5F763493280B0D8C00AF49ED /* SlimMenuView.swift in Sources */,
 				5F2ECF882795F7C500B0F335 /* MensaView.swift in Sources */,
-				5F4BA3A7277DD90E00C528B4 /* ContentView.swift in Sources */,
 				5F4BA3A5277DD90E00C528B4 /* MensaApp.swift in Sources */,
 				5F2ECF8A2795FA2D00B0F335 /* Menu.swift in Sources */,
+				5F763497280B1EA500AF49ED /* Location.swift in Sources */,
 				5F763491280B004A00AF49ED /* Overview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
