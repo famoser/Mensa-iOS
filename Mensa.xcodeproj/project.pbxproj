@@ -21,6 +21,8 @@
 		5F763493280B0D8C00AF49ED /* SlimMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763492280B0D8C00AF49ED /* SlimMenuView.swift */; };
 		5F763495280B1DDE00AF49ED /* locations-ethz.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F763494280B1DDE00AF49ED /* locations-ethz.json */; };
 		5F763497280B1EA500AF49ED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763496280B1EA500AF49ED /* Location.swift */; };
+		5F76349B280BE60E00AF49ED /* locations-uzh.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F76349A280BE60E00AF49ED /* locations-uzh.json */; };
+		5F76349D280BF17700AF49ED /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76349C280BF17700AF49ED /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		5F763492280B0D8C00AF49ED /* SlimMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimMenuView.swift; sourceTree = "<group>"; };
 		5F763494280B1DDE00AF49ED /* locations-ethz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "locations-ethz.json"; sourceTree = "<group>"; };
 		5F763496280B1EA500AF49ED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		5F76349A280BE60E00AF49ED /* locations-uzh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "locations-uzh.json"; sourceTree = "<group>"; };
+		5F76349C280BF17700AF49ED /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				5F2ECF832795E6BB00B0F335 /* Mensa.swift */,
 				5F2ECF892795FA2D00B0F335 /* Menu.swift */,
 				5F763496280B1EA500AF49ED /* Location.swift */,
+				5F76349C280BF17700AF49ED /* SampleData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				5F4BA3A8277DD90E00C528B4 /* Assets.xcassets */,
 				5F4BA3AA277DD90E00C528B4 /* Preview Content */,
 				5F763494280B1DDE00AF49ED /* locations-ethz.json */,
+				5F76349A280BE60E00AF49ED /* locations-uzh.json */,
 			);
 			path = Mensa;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			files = (
 				5F763495280B1DDE00AF49ED /* locations-ethz.json in Resources */,
 				5F4BA3AC277DD90E00C528B4 /* Preview Assets.xcassets in Resources */,
+				5F76349B280BE60E00AF49ED /* locations-uzh.json in Resources */,
 				5F4BA3A9277DD90E00C528B4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +325,7 @@
 				5F4BA3A5277DD90E00C528B4 /* MensaApp.swift in Sources */,
 				5F2ECF8A2795FA2D00B0F335 /* Menu.swift in Sources */,
 				5F763497280B1EA500AF49ED /* Location.swift in Sources */,
+				5F76349D280BF17700AF49ED /* SampleData.swift in Sources */,
 				5F763491280B004A00AF49ED /* Overview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

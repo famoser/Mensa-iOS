@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Location: Decodable, Identifiable {
+class Location: Identifiable {
     internal init(title: String, mensas: [Mensa]) {
         self.title = title
         self.mensas = mensas
@@ -15,11 +15,9 @@ class Location: Decodable, Identifiable {
     
     var title: String
     var mensas: [Mensa]
-    
-    
-    static let sampleData: [Location] =
-    [
-        Location(title: "Zentrum", mensas: Mensa.sampleData),
-        Location(title: "Hönggerberg", mensas: Mensa.sampleData)
-    ]
+}
+
+struct ETHLocation: Decodable {
+    var title: String
+    var mensas: [ETHMensa]
 }

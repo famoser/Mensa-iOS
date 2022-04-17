@@ -28,7 +28,7 @@ struct Overview: View {
 }
 
 struct Overview_Previews: PreviewProvider {
-    static var mensas = Mensa.sampleData
+    static var mensas = Mensa.generateSampleData()
     static var previews: some View {
         Overview(mensas: mensas)
     }

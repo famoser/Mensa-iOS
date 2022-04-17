@@ -11,9 +11,11 @@ struct MensaView: View {
     let mensa: Mensa
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Image(mensa.title.lowercased())
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            if let imageAssetId = mensa.imageAssetId {
+                Image(imageAssetId)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            }
             List {
                 ForEach(mensa.menus){ menu in
                     MenuView(menu: menu)
@@ -25,7 +27,7 @@ struct MensaView: View {
 }
 
 struct MensaView_Previews: PreviewProvider {
-    static var mensa = Mensa.sampleData[0]
+    static var mensa = Mensa.generateSampleData()[0]
     static var previews: some View {
         MensaView(mensa: mensa)
     }

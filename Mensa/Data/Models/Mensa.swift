@@ -7,47 +7,39 @@
 
 import Foundation
 
-class Mensa: Identifiable, Decodable {
-    internal init(id: UUID, title: String, url: URL, mealTime: String, imagePath: String? = nil, menus: [Menu]) {
+class Mensa: Identifiable {
+    internal init(id: UUID, title: String, mealTime: String, url: URL, imageAssetId: String? = nil, menus: [Menu]) {
         self.id = id
         self.title = title
-        self.url = url
         self.mealTime = mealTime
-        self.imagePath = imagePath
+        self.url = url
+        self.imageAssetId = imageAssetId
         self.menus = menus
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try values.decode(UUID.self, forKey: .id)
-        self.title = try values.decode(String.self, forKey: .title)
-        self.mealTime = try values.decode(String.self, forKey: .mealTime)
-        
-        let infoUrlSlug = try values.decode(String.self, forKey: .infoUrlSlug)
-        self.url = URL(string: "https://ethz.ch/" + infoUrlSlug)!
-        
-        self.menus = Menu.sampleData
-    }
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case title
-        case mealTime
-        case idSlug
-        case timeSlug
-        case infoUrlSlug
     }
     
     var id: UUID
     var title: String
     var mealTime: String
     var url: URL
-    var imagePath: String?
+    var imageAssetId: String?
     var menus: [Menu]
+}
+
+struct ETHMensa: Decodable {
+    func createMensa() -> Mensa {
+        let id = UUID.init(uuidString: self.id)!
+        let url = URL(string: "https://ethz.ch/" + self.infoUrlSlug)!
+        
+        let suffixStart = infoUrlSlug.index(after: infoUrlSlug.lastIndex(of: "/")!)
+        let imageAssetId = String(infoUrlSlug[suffixStart...])
+        
+        return Mensa(id: id, title: self.title, mealTime: self.mealTime, url: url, imageAssetId: imageAssetId, menus: Menu.sampleData)
+    }
     
-    static let sampleData: [Mensa] =
-    [
-        Mensa(id: UUID.init(), title: "Dozentenfoyer", url: URL(string: "https://ethz.ch")!, mealTime: "11:30 - 13:30", imagePath: nil, menus: Menu.sampleData),
-        Mensa(id: UUID.init(), title: "Uni Mensa", url: URL(string: "https://uzh.ch")!, mealTime: "11:00 - 13:30", imagePath: nil, menus: Menu.sampleData)
-    ]
+    var id: String
+    var title: String
+    var mealTime: String
+    var idSlug: Int
+    var timeSlug: String
+    var infoUrlSlug: String
 }
