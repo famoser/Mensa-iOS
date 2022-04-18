@@ -10,16 +10,19 @@ import SwiftUI
 struct SlimMenuView: View {
     var menu: Menu
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text(menu.description)
-                    .lineLimit(2)
-            }
-            Spacer()
-            VStack(alignment: .trailing) {
+        VStack(alignment: .leading) {
+            HStack {
                 Text(menu.title).fontWeight(.bold)
-                Text(menu.price.first ?? "")
+                if let firstMenuPrice = menu.price.first {
+                    Text("CHF " + firstMenuPrice)
+                        .foregroundStyle(.secondary)
+                        .font(.footnote)
+                }
+                Spacer()
             }
+            Text(menu.description)
+                .lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 }

@@ -12,7 +12,7 @@ struct MensaApp: App {
     @State var locations: [Location] = loadLocations()
     var body: some Scene {
         WindowGroup {
-            Overview(mensas: locations[0].mensas)
+            Overview(locations: locations)
         }
     }
 }

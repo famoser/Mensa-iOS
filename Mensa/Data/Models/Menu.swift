@@ -24,7 +24,7 @@ class Menu: Identifiable {
 extension Menu {
     static let sampleData: [Menu] =
     [
-        Menu(title: "STREET", description: "Wesley's Special\nEnte an Ananassauce\nReis", price: ["2.50", "7.00", "8.90"], allergens: "Erdnüsse"),
+        Menu(title: "STREET", description: "Wesley's Special\nEnte an Ananassauce mit Saft und so viel zu viel stauff\nReis", price: ["2.50", "7.00", "8.90"], allergens: "Erdnüsse"),
         Menu(title: "GARDEN", description: "Grillierter Halloumi Käse\nGriechischer Salat\nFocacciabrot", price: ["2.50", "7.00", "8.90"], allergens: "Gluten, Milch/Laktase, Sulfite"),
         Menu(title: "HOME", description: "Zarte Pouletstreifen\nSweet Stroganoff Sauce\nApfelmuss oder Salat", price: ["2.50", "7.00", "8.90"], allergens: nil)
     ]

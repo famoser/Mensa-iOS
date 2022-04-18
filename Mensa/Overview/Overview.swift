@@ -8,28 +8,21 @@
 import SwiftUI
 
 struct Overview: View {
-    @State var mensas: [Mensa]
+    @State var locations: [Location]
     var body: some View {
         NavigationView {
-            List {
-                ForEach(mensas) { mensa in
-                    Section(header: Text(mensa.title)) {
-                        ForEach(mensa.menus){ menu in
-                            NavigationLink(destination: MensaView(mensa: mensa)) {
-                                SlimMenuView(menu: menu)
-                            }
-                        }
-                    }
-                }
+            Form {
+                MensaFilterView()
+                LocationsView(locations: locations)
             }
-            .navigationTitle("Zentrum")
+            .navigationTitle("Mensas")
         }
     }
 }
 
 struct Overview_Previews: PreviewProvider {
-    static var mensas = Mensa.generateSampleData()
+    static var locations = Location.generateSampleData()
     static var previews: some View {
-        Overview(mensas: mensas)
+        Overview(locations: locations)
     }
 }

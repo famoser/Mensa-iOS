@@ -12,7 +12,10 @@ struct MenuView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(menu.title).fontWeight(.bold)
-            Text(menu.price.joined(separator: " / "))
+            if menu.price.count > 0 {
+                Text("CHF " + menu.price.joined(separator: " / "))
+                    .foregroundStyle(.secondary)
+            }
             Spacer()
             Text(menu.description)
             if menu.allergens != nil {

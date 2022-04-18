@@ -23,6 +23,9 @@
 		5F763497280B1EA500AF49ED /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F763496280B1EA500AF49ED /* Location.swift */; };
 		5F76349B280BE60E00AF49ED /* locations-uzh.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F76349A280BE60E00AF49ED /* locations-uzh.json */; };
 		5F76349D280BF17700AF49ED /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76349C280BF17700AF49ED /* SampleData.swift */; };
+		5F76349F280DDE9F00AF49ED /* SlimMensaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F76349E280DDE9F00AF49ED /* SlimMensaView.swift */; };
+		5F7634A1280DF26B00AF49ED /* MensaFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7634A0280DF26B00AF49ED /* MensaFilterView.swift */; };
+		5F7634A5280DF37800AF49ED /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7634A4280DF37800AF49ED /* LocationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		5F763496280B1EA500AF49ED /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		5F76349A280BE60E00AF49ED /* locations-uzh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "locations-uzh.json"; sourceTree = "<group>"; };
 		5F76349C280BF17700AF49ED /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		5F76349E280DDE9F00AF49ED /* SlimMensaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlimMensaView.swift; sourceTree = "<group>"; };
+		5F7634A0280DF26B00AF49ED /* MensaFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensaFilterView.swift; sourceTree = "<group>"; };
+		5F7634A4280DF37800AF49ED /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 			children = (
 				5F763490280B004A00AF49ED /* Overview.swift */,
 				5F763492280B0D8C00AF49ED /* SlimMenuView.swift */,
+				5F76349E280DDE9F00AF49ED /* SlimMensaView.swift */,
+				5F7634A0280DF26B00AF49ED /* MensaFilterView.swift */,
+				5F7634A4280DF37800AF49ED /* LocationsView.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -318,6 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F76349F280DDE9F00AF49ED /* SlimMensaView.swift in Sources */,
+				5F7634A5280DF37800AF49ED /* LocationsView.swift in Sources */,
+				5F7634A1280DF26B00AF49ED /* MensaFilterView.swift in Sources */,
 				5F2ECF842795E6BB00B0F335 /* Mensa.swift in Sources */,
 				5F2ECF8C279604D800B0F335 /* MenuView.swift in Sources */,
 				5F763493280B0D8C00AF49ED /* SlimMenuView.swift in Sources */,
